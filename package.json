@@ -1,0 +1,19 @@
+{
+  "name": "kurznotizen",
+  "version": "1.0.0",
+  "description": "Kurznotizen - immer im Vordergrund",
+  "main": "main.js",
+  "scripts": { "start": "electron ." },
+  "author": "Paul Görner",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "de.goerner.kurznotizen",
+    "productName": "Kurznotizen",
+    "files": ["main.js", "preload.js", "index.html", "package.json"],
+    "win": { "target": "portable" },
+    "portable": { "artifactName": "Kurznotizen.exe" }
+  }
+}
